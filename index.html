@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Technical University of Kenya - CampusConnect</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, blue, pink);
+            color: white;
+        }
+
+        header {
+            background: #001f5b;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav {
+            background: #ff69b4;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: yellow;
+        }
+
+        .slider {
+            width: 80%;
+            height: 400px;
+            margin: 30px auto;
+            overflow: hidden;
+            border-radius: 10px;
+            border: 4px solid white;
+        }
+
+        .slides {
+            display: flex;
+            width: 300%;
+            animation: slide 12s infinite;
+        }
+
+        .slides img {
+            width: 100%;
+            height: 400px;
+        }
+
+        @keyframes slide {
+            0% { transform: translateX(0%); }
+            33% { transform: translateX(-100%); }
+            66% { transform: translateX(-200%); }
+            100% { transform: translateX(0%); }
+        }
+
+        footer {
+            background: #001f5b;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Technical University of Kenya</h1>
+    <h2>CampusConnect Portal</h2>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="events.html">Events</a>
+    <a href="register.html">Register</a>
+</nav>
+
+<div class="slider">
+    <div class="slides">
+        <img src="image1.png" alt="image.1.png">
+        <img src="image2.jpg" alt="image2.jpg">
+        <img src="image3.png" alt="image3.png">
+    </div>
+</div>
+
+<footer>
+    &copy; 2026 Technical University of Kenya | Follow us on Facebook | Twitter | Instagram
+</footer>
+
+</body>
+</html

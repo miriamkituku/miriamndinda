@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TUK Registration</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: linear-gradient(to right, blue, pink);
+            color: white;
+            text-align: center;
+        }
+
+        form {
+            background: rgba(0,0,0,0.6);
+            width: 50%;
+            margin: auto;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        input, select {
+            width: 90%;
+            padding: 8px;
+            margin: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background: pink;
+            border: none;
+            cursor: pointer;
+        }
+
+        nav {
+            background: #001f5b;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            margin: 15px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="events.html">Events</a>
+    <a href="register.html">Register</a>
+</nav>
+
+<h1>Event Registration</h1>
+
+<form onsubmit="return validateForm()">
+    <input type="text" id="adm" placeholder="Student Admission Number"><br>
+    <input type="text" id="name" placeholder="Full Name"><br>
+
+    <select>
+        <option>Select Event</option>
+        <option>Cultural Week</option>
+        <option>Sports Day</option>
+        <option>Students Election</option>
+        <option>Tree Planting Day</option>
+    </select><br>
+
+    <input type="email" id="email" placeholder="Email Address"><br>
+
+    <button type="submit">Submit</button>
+</form>
+
+<script>
+function validateForm(){
+    var adm = document.getElementById("adm").value;
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+
+    if(adm == "" || name == "" || email == ""){
+        alert("All fields are required!");
+        return false;
+    }
+
+    alert("Registration Successful!");
+    return true;
+}
+</script>
+
+</body>
+</html>

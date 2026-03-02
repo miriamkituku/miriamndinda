@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TUK Events</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body {
+            font-family: Arial;
+            background: linear-gradient(to right, blue, pink);
+            color: white;
+            text-align: center;
+        }
+
+        .card {
+            background: rgba(0,0,0,0.6);
+            width: 70%;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        img {
+            width: 100%;
+            height: 250px;
+            border-radius: 10px;
+        }
+
+        button {
+            padding: 8px 15px;
+            background: pink;
+            border: none;
+            cursor: pointer;
+        }
+
+        .more {
+            display: none;
+            margin-top: 10px;
+        }
+
+        nav {
+            background: #001f5b;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            margin: 15px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="events.html">Events</a>
+    <a href="register.html">Register</a>
+</nav>
+
+<h1>TUK Upcoming Events</h1>
+
+<div class="card">
+    <img src="culture day.jpg" alt="culture day.jpg">
+    <h2>Cultural Week</h2>
+    <p>Date: 15 March 2026</p>
+    <button class="btn">Show More</button>
+    <div class="more">
+        A week of cultural exhibitions, music, food and performances.
+    </div>
+</div>
+
+<div class="card">
+    <img src="sportsday.jpg" alt="sportsday.jpg">
+    <h2>Sports Day</h2>
+    <p>Date: 25 March 2026</p>
+    <button class="btn">Show More</button>
+    <div class="more">
+        Athletics, football, basketball and fun competitions.
+    </div>
+</div>
+
+<div class="card">
+    <img src="studentelections.jpg" alt="studentelections.jpg">
+    <h2>Students Election</h2>
+    <p>Date: 5 April 2026</p>
+    <button class="btn">Show More</button>
+    <div class="more">
+        Voting for student leaders and governance.
+    </div>
+</div>
+
+<div class="card">
+    <img src="treeplanting.png" alt="treeplanting.png">
+    <h2>Tree Planting Day</h2>
+    <p>Date: 12 April 2026</p>
+    <button class="btn">Show More</button>
+    <div class="more">
+        Environmental conservation activity around campus.
+    </div>
+</div>
+
+<script>
+    $(".btn").click(function(){
+        $(this).next(".more").slideToggle();
+    });
+</script>
+
+</body>
+</html>
